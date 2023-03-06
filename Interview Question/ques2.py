@@ -1,3 +1,4 @@
+
 """1.find the second lowest grade and the name of the student"""
 
 # list_1=[['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.20], ['Akriti', 41], ['Harsh', 39]]
@@ -365,36 +366,89 @@ than 8 strip it to 8 letter word"""
 get the list of integers from the user and sort it in ascending order and 
 find the sum of difference of adjacent elements in the list, if the sum is even return true and the 
 sum and if sum is odd return false and the sum value"""
+#
+# def list_even_validation(list1):
+#
+#   #sorting the list
+#   for i in range(len(list1)):
+#     for j in range(len(list1)):
+#       if list1[i]<list1[j]:
+#         list1[i],list1[j]=list1[j],list1[i]
+#
+#   #finding the difference with the adjacent element
+#   new_list=[]
+#   for i in range(len(list1)):
+#     if i<len(list1)-1:
+#       diff=list1[i+1]-list1[i]
+#     new_list.append(diff)
+#
+#   #finding the sum of difference of adjacent element list
+#   sum=0
+#   for i in new_list:
+#     sum=sum+i
+#   if sum%2==0:
+#     print("the sum of the difference of adjacent element is {} and it is even.".format(sum))
+#   else:
+#     print("the sum of the difference of adjacent element is {} and it is odd.".format(sum))
+#
+# n=int(input("enter the number of elements in a list"))
+# user_list=[]
+# for i in range(n):
+#   p=int(input("enter the element to be added in the list"))
+#   user_list.append(p)
+#
+# list_even_validation(user_list)
+#
+#
+"""18. bracket validation"""
+# a="({[]})"
+# open_brack=["(","{","["]
+# close=[")","}","]"]
+# list_para=[]
+# count_open=0
+# count_close=0
+# for i in a:
+#   if i not in close:
+#     list_para.append(i)
+#     count_open+=1
+#   else:
+#     try:
+#       count_close+=1
+#       if list_para[-1]==open_brack[close.index(i)]:
+#
+#         list_para.pop()
+#     except:
+#       pass
+# if list_para:
+#   print("this is not valid")
+#
+# else:
+#   if count_open==count_close:
+#     print("this is valid set")
+#   else:
+#     print("this is not valid set")
 
-def list_even_validation(list1):
-
-  #sorting the list
-  for i in range(len(list1)):
-    for j in range(len(list1)):
-      if list1[i]<list1[j]:
-        list1[i],list1[j]=list1[j],list1[i]
-
-  #finding the difference with the adjacent element
-  new_list=[]
-  for i in range(len(list1)):
-    if i<len(list1)-1:
-      diff=list1[i+1]-list1[i]
-    new_list.append(diff)
-  #finding the sum of difference of adjacent element list
-  sum=0
-  for i in new_list:
-    sum=sum+i
-  if sum%2==0:
-    print("the sum of the difference of adjacent element is {} and it is even.".format(sum))
-  else:
-    print("the sum of the difference of adjacent element is {} and it is odd.".format(sum))
-
-n=int(input("enter the number of elements in a list"))
-user_list=[]
-for i in range(n):
-  p=int(input("enter the element to be added in the list"))
-  user_list.append(p)
-
-list_even_validation(user_list)
-
+"""single bracket"""
+# a="((())))))"
+# list_para=[]
+# count_open=0
+# count_close=0
+# for i in a:
+#   if i!=")":
+#     list_para.append(i)
+#     count_open+=1
+#   else:
+#     try:
+#       count_close+=1
+#       list_para.pop()
+#     except:
+#       pass
+# if list_para:
+#   print("this is not valid")
+#
+# else:
+#   if count_open==count_close:
+#     print("this is valid set")
+#   else:
+#     print("this is not valid set")
 
