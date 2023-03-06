@@ -1,0 +1,43 @@
+1.print a multiplication table.
+2.for a given input print the value from a given dictionary
+3.Write a program to find the elements of a list that have least difference in python? input = [3,9,50,15,99,7,98,65] output = [98,99]
+4.Get the lines above and below of the line containing a string.
+5.Write a Python program to produce half pyramid using *.
+6.Print a list of odd index elements from list1 and even index elements from list2 and print the thrid list with the result set of both. list1 = [3,6,9,12,15,18,21] list2 = [4,8,12,16,20,24,28]
+7.write a python program to print the repititve characters in a list which should exclude integers input = ['a','a',4,4,'b','c','a'] output = {'a':3} 
+8.write a program to count the no.of characters in a string. input : "I am good at python" output : {'g':1, '0:3, 'a':2, ...}
+9.write a program to find missing numbers from a list
+10.create a fibonacci series of 100 using recursive function
+11.write a program to check if a given positive integer is a power of two
+12.write a list comprehension to print a list from 1 to 10
+13.How to remove the nth occurrence of the word from a list?
+14.Print HELLO for the given string “AHCECLWLXO”.
+15.Print HELLO in CAPITAL letters for the given string “ahceclwlxo”.
+16.Ask the user to enter a number and then print the multiplication table of that number
+17.Ask the user to enter two number (int) a and b, return true if a) either one is 6 b) or if their sum is 6 c) or the difference is 6
+18.Ask the user to input a string of odd length, return the string length 3 from its middle. The string length will be at least 3.
+19.Given 2 strings, a and b, return a new string made of the first char of a and the last char of b. If either string is length 0, use ‘@’ for its missing char.
+20.Given a string, return true if “bad” appears starting at index 0 or 1 in the string, The string may be any length, including 0.
+21.Ask user to input a string, return a new string where for every char in the original, there are two chars.
+Ex1: (“The”) → “TThhee”
+Ex2: (“AAbb”) → “AAAAbbbb”
+Ex3: (“Hi-There”) → “HHii–TThheerree”
+22.Given an array length 1 or more of ints, return the difference between the largest and smallest values in the array.
+23. Given an array of ints, return true if the number of 1’s is greater than the number of 4’s
+24.write a program to swap 2 numbers without out 3rd variable
+25.write a program to print occurance if character using dictionary comphersion
+26.Write pgm to find prime numbers using list comprehension
+27.Write a Program to print sum of even numbers which is divisible by 8:-
+28.Write a function to return the nth fibonacci number. The first two can be assumed to be 1 and 1. The third and fourth are then calculated to be 2 and 3.
+29.[4,5,6,7,2,3,11,13] Sort the element in a such a way that have even should come first and odd numbers at last.
+30.Print odd numbers as it is and double the even numbers.
+31.the sum of 100 numbers divisible by 2 but not 8
+32. Write a code for Capitalize ( Refer the in put and output ) sample input : getCodeType output: Code_Type i/p : getCodeStyle o/p: Code_Style i/p: getSWIFTCode o/p: SWIFT_Code
+33.if a number divide in 3 print "hello", in "5" print "world", in 15 print "helloworld"
+34.find even number betweens 1 to 100 and not divisible by 8 
+35.Create a dictionary like this : {a:1, b:2, c:3, d:4, e:5}
+36.my_list = [[35, 66, 31], ["python", 13, "is"], [15, "fun", 14]] OUTPUT REQUIRED: To print the string from the list as : python is fun
+37.Write a function that takes an array of integers and returns that array rotated by N positions using Python or Ruby or JavaScript. For example, if N=2, given the input array [1, 2, 3, 4, 5, 6] the function should return [5, 6, 1, 2, 3, 4]
+38.find minimum number in list without using comparison operator. 
+39."==" vs "is"
+40. Check if "(()))(" is a valid pair of parenthesis or not.
