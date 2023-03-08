@@ -1,4 +1,3 @@
-
 """1.find the second lowest grade and the name of the student"""
 
 # list_1=[['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.20], ['Akriti', 41], ['Harsh', 39]]
@@ -401,54 +400,52 @@ sum and if sum is odd return false and the sum value"""
 #
 #
 """18. bracket validation"""
-# a="({[]})"
-# open_brack=["(","{","["]
-# close=[")","}","]"]
-# list_para=[]
-# count_open=0
-# count_close=0
-# for i in a:
-#   if i not in close:
-#     list_para.append(i)
-#     count_open+=1
-#   else:
-#     try:
-#       count_close+=1
-#       if list_para[-1]==open_brack[close.index(i)]:
-#
-#         list_para.pop()
-#     except:
-#       pass
-# if list_para:
-#   print("this is not valid")
-#
-# else:
-#   if count_open==count_close:
-#     print("this is valid set")
-#   else:
-#     print("this is not valid set")
+a = "({[]})"
+open_brack = ["(", "{", "["]
+close = [")", "}", "]"]
+list_para = []
+count_open = 0
+count_close = 0
+for i in a:
+    if i not in close:
+        list_para.append(i)
+        count_open += 1
+    else:
+        try:
+            count_close += 1
+            if list_para[-1] == open_brack[close.index(i)]:
+                list_para.pop()
+        except:
+            pass
+if list_para:
+    print("this is not valid")
+
+else:
+    if count_open == count_close:
+        print("this is valid set")
+    else:
+        print("this is not valid set")
 
 """single bracket"""
-# a="((())))))"
-# list_para=[]
-# count_open=0
-# count_close=0
-# for i in a:
-#   if i!=")":
-#     list_para.append(i)
-#     count_open+=1
-#   else:
-#     try:
-#       count_close+=1
-#       list_para.pop()
-#     except:
-#       pass
-# if list_para:
-#   print("this is not valid")
-#
-# else:
-#   if count_open==count_close:
-#     print("this is valid set")
-#   else:
-#     print("this is not valid set")
+a = "((())))))"
+list_para = []
+count_open = 0
+count_close = 0
+for i in a:
+    if i != ")":
+        list_para.append(i)
+        count_open += 1
+    else:
+        try:
+            count_close += 1
+            list_para.pop()
+        except:
+            pass
+if list_para:
+    print("this is not valid")
 
+else:
+    if count_open == count_close:
+        print("this is valid set")
+    else:
+        print("this is not valid set")
