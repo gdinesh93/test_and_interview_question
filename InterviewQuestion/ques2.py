@@ -400,52 +400,323 @@ sum and if sum is odd return false and the sum value"""
 #
 #
 """18. bracket validation"""
-a = "({[]})"
-open_brack = ["(", "{", "["]
-close = [")", "}", "]"]
-list_para = []
-count_open = 0
-count_close = 0
-for i in a:
-    if i not in close:
-        list_para.append(i)
-        count_open += 1
-    else:
-        try:
-            count_close += 1
-            if list_para[-1] == open_brack[close.index(i)]:
-                list_para.pop()
-        except:
-            pass
-if list_para:
-    print("this is not valid")
-
-else:
-    if count_open == count_close:
-        print("this is valid set")
-    else:
-        print("this is not valid set")
+# a = "({[]})"
+# open_brack = ["(", "{", "["]
+# close = [")", "}", "]"]
+# list_para = []
+# count_open = 0
+# count_close = 0
+# for i in a:
+#     if i not in close:
+#         list_para.append(i)
+#         count_open += 1
+#     else:
+#         try:
+#             count_close += 1
+#             if list_para[-1] == open_brack[close.index(i)]:
+#                 list_para.pop()
+#         except:
+#             pass
+# if list_para:
+#     print("this is not valid")
+#
+# else:
+#     if count_open == count_close:
+#         print("this is valid set")
+#     else:
+#         print("this is not valid set")
 
 """single bracket"""
-a = "((())))))"
-list_para = []
-count_open = 0
-count_close = 0
-for i in a:
-    if i != ")":
-        list_para.append(i)
-        count_open += 1
-    else:
-        try:
-            count_close += 1
-            list_para.pop()
-        except:
-            pass
-if list_para:
-    print("this is not valid")
+# a = "((())))))"
+# list_para = []
+# count_open = 0
+# count_close = 0
+# for i in a:
+#     if i != ")":
+#         list_para.append(i)
+#         count_open += 1
+#     else:
+#         try:
+#             count_close += 1
+#             list_para.pop()
+#         except:
+#             pass
+# if list_para:
+#     print("this is not valid")
+#
+# else:
+#     if count_open == count_close:
+#         print("this is valid set")
+#     else:
+#         print("this is not valid set")
 
-else:
-    if count_open == count_close:
-        print("this is valid set")
-    else:
-        print("this is not valid set")
+"""19.Indium L3"""
+
+# list_num=[1,2,3,4,5,6]
+# num=8
+# output_list=[] #[[2, 6], [3, 5], [1, 2, 5], [1, 3, 4]]
+
+# for i in range(len(list_num)):
+#   for j in range(i+1,len(list_num)):
+#     if list_num[i]+list_num[j]==num:
+#       output_list.append([list_num[i],list_num[j]])
+
+
+# for i in range(len(list_num)):
+#   for j in range(i+1,len(list_num)):
+#     for k in range(j+1,len(list_num)):
+#       if list_num[i]+list_num[j]+list_num[k]==num:
+#         output_list.append([list_num[i],list_num[j],list_num[k]])
+
+# print(output_list)
+
+
+"""20. Indium L3"""
+# A1[] = {2, 1, 2, 5, 7, 1, 9, 3, 6, 8, 8} A2[] = [2, 1, 8, 3] Output: 2 2 1 1 8 8 3 5 6 7 9
+# list_1=[2, 1, 2, 5, 7, 1, 9, 3, 6, 8, 8]
+# list_2=[2, 1, 8, 3]
+# output_list=[]
+# temp_dic={} #{2: 2, 1: 2, 5: 1, 7: 1, 9: 1, 3: 1, 6: 1, 8: 2}
+#
+# for i in list_1:
+#   if i not in temp_dic:
+#     temp_dic[i]=1
+#   else:
+#     temp_dic[i]+=1
+#
+# print(temp_dic)
+#
+# for i in list_2:
+#   if i in temp_dic:
+#     for j in range(temp_dic[i]):
+#       output_list.append(i)
+# # print(output_list)
+#
+# list_3=[]
+#
+# for i in list_1:
+#   if i not in list_2:
+#     list_3.append(i)
+#
+# # print(list_3)
+#
+# list_3.sort()
+# output_list.extend(list_3)
+# print("the output is =",output_list)
+
+"""21.Mindtech L3"""
+
+# # Input = [-6,-4,1,2,3,5]
+# # Output = [36, 25, 16, 9, 4, 1]
+
+# list_input= [-6,-4,1,2,3,5]
+# list_temp=[]
+
+# for i in list_input:
+#   if i <0:
+#     list_temp.append(i*(-1))
+#   else:
+#     list_temp.append(i)
+# # print(list_temp)
+
+# # sorting the list:ls=[4,2,3,1]
+# for i in range(len(list_temp)):
+#   for j in range(len(list_temp)):
+#     if list_temp[i]>list_temp[j]:
+#       list_temp[i], list_temp[j]=list_temp[j], list_temp[i]
+
+# # print(list_temp)
+
+# #squaring the list element:
+# list_output=[]
+# for i in list_temp:
+#   list_output.append(i*i)
+
+# print("the output is ", list_output)
+
+"""22. Mindtech L3"""
+
+# string_1="helloworld"
+
+# N = 6
+# Output : hellodliow
+# n=6
+# string_temp=""
+# count=1
+# for i in string_1:
+#   if count<n:
+#     string_temp+=i
+#   else:
+#     string_temp+=chr(122-ord(i)+97)
+#   count+=1
+# print(string_temp)
+
+"""23. Msys L1"""
+# operations
+#
+#
+# class A:
+#     def add(self, a, b):
+#         print(a + b)
+#
+#     def sub(self, a, b):
+#         print(a - b)
+#
+#
+# from operations import A
+#
+# a = int(input("enter the number"))
+# b = int(input("enter another number"))
+#
+# obj_a = A()
+# obj_a.add(a, b)
+# obj_a.sub(a, b)
+
+"""24. Msys L1"""
+# get the list and pass it into the method and remove the provided element.
+
+# def element_removal(ls, ele):
+#     count = 0
+#     for i in ls:
+#         count += 1
+#         if i == ele:
+#             ls.remove(i)
+#             print("the list after the removed element is {} and the element is removed from the index {}".format(ls,
+#                                                                                                                  count - 1))
+#
+#             break
+#     else:
+#         print("the given number is not in the list")
+#
+#
+# n = int(input("enter the number of elements that you would like in the list"))
+# list_1 = []
+# for i in range(n):
+#     a = int(input("enter the element"))
+#     list_1.append(a)
+#
+# b = int(input("enter the number that you would like to be removed"))
+#
+# element_removal(list_1, b)
+
+"""25. synechron L2"""
+
+# n=13
+# # 1,10,11,12,13=6
+# list_1=[x for x in range(1,n+1)]
+# count=0
+# for i in list_1:
+#   str_num=str(i)
+#   for j in str_num:
+#     if j=="1":
+#       count+=1
+# print("the count of 1 in the range of 13 is", count)
+
+"""26. Msys L2"""
+
+# statement = "Python for call interview an is This"
+#
+# list_temp=statement.split()
+#
+# output_statement=[]
+#
+# for i in range(-1, -(len(list_temp)+1), -1):
+#   output_statement.append(list_temp[i])
+#
+# print("the reversed statement is= ", " ". join(output_statement))
+
+"""27. Msys L2"""
+
+# def triangle(n):
+#   for i in range(n):
+#     for j in range(n-i):
+#       print(" ", end="")
+#     for j in range(i+1):
+#       print("*", end=" ")
+#     print()
+#
+# triangle(5)
+
+"""28. Msys L2"""
+
+# factorial of 6 using recursive
+
+# def fact(n):
+#   if n==0 or n==1:
+#     return n
+#   else:
+#     return n*fact(n-1)
+#
+# print(" The factorial is ",fact(6))
+
+"""29. Msys L2"""
+
+# mystring="asbsdflwerbsdf9erj;ladsfvnasldfkwierhWALKJ"
+#
+# count=0
+#
+# for i in mystring:
+#   if i.lower()=="a":
+#     count+=1
+#
+# print("the number of occurrence of the letter a is =", count)
+
+
+"""30. Msys L2"""
+
+# def prime():
+#   i=2
+#   while True:
+#     if i>1:
+#       for j in range(2,i):
+#         if i%j==0:
+#           break
+#       else:
+#         yield i
+#       i+=1
+#
+# f=prime()
+#
+# for i in prime():
+#   print(i)
+
+
+"""31. Msys L2"""
+
+# list1 = [11, 22, 5, 46, 98, 57,64, 43, 2, 36,90]
+#
+# first_largest=list1[0]
+# second_largest=list1[1]
+#
+# for i in range(len(list1)):
+#   if list1[i]>first_largest:
+#     second_largest=first_largest
+#     first_largest=list1[i]
+#
+#   elif list1[i]>second_largest:
+#     second_largest=list1[i]
+#
+# print("the second largest number is, ", second_largest)
+
+"""32. Msys L2"""
+
+# class Test_fullname:
+#     first = "dinesh"
+#     last = "murugan"
+#     name = "dinesh murugan"
+#
+#     @pytest.mark.name
+#     def test_combine(self):
+#         temp_fullname = self.fname + " " + self.lname
+#         assert self.name == temp_fullname
+
+"""33.Msys L2"""
+
+import re
+import subprocess
+
+content=subprocess.run("ipconfig", capture_output=True)
+text=str(content.stdout)
+p=re.compile(r"(?<=IPv4 Address).*?:(.*?)\\r")
+m=p.search(text)
+print("The Ip address is -",m.group(1))

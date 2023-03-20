@@ -60,6 +60,29 @@ Output = [['cat', 'tac'], ['dog', 'god'], ['fried', 'fired'], ['pat', 'tap']]
 # print(ls2)
 
 
+##method2:
+
+# input_str = ['cat', 'dog', 'fired', 'god', 'pat', 'tap', 'fried', 'tac']
+# sample_str=[]
+# output_str=[]
+#
+# for str1 in input_str:
+#   w=[x for x in str1]
+#   for i in range(len(w)):
+#     for j in range(len(w)):
+#       if w[i]<w[j]:
+#         w[i],w[j]=w[j],w[i]
+#
+#   sample_str.append(w)
+#
+# for i in range(len(sample_str)):
+#   for j in range(i+1,len(sample_str)):
+#     if sample_str[i]==sample_str[j]:
+#       output_str.append([input_str[i],input_str[j]])
+#
+# print(output_str)
+
+
 # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 """-------------Ques- : {write python code for:}------------------------"""
@@ -138,6 +161,15 @@ write python code for: i have a. dictionary i want to print keys based on values
 # ind=val.index(n)
 # print("the key for the value {} is '{}'".format(n,key[ind]))
 
+# method2
+
+
+# def value_key(d,n):
+#   for i in d:
+#     if d[i]==n:
+#       print(i)
+#
+# value_key(d,1)
 # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 """-------------Ques- : {write python code for:}------------------------"""
@@ -236,6 +268,30 @@ second largest mark obtaines by: “Harsh”
 # ind=val.index(sec_large)
 # print("name with second largest number is",name[ind])
 
+##method-2 for second lowest:
+
+# list_1 = [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.20], ['Akriti', 41], ['Harsh', 39]]
+# name = [list_1[x][0] for x in range(len(list_1))]
+# mark = [list_1[x][1] for x in range(len(list_1))]
+# first_lowest = mark[0]
+# second_lowest = mark[1]
+#
+# for i in range(len(mark)):
+#     if mark[i] < first_lowest:
+#         second_lowest = first_lowest
+#         first_lowest = mark[i]
+#
+#     elif mark[i] < second_lowest and mark[i] != first_lowest:
+#         second_lowest = mark[i]
+#
+# print(first_lowest, second_lowest)
+# second_lowest_name = []
+# for i in range(len(mark)):
+#     if mark[i] == second_lowest:
+#         second_lowest_name.append(name[i])
+#
+# print(name, mark, second_lowest_name)
+
 # -----------------------------------------------------------------------------------------------------------------------
 """-------------Ques- : {write python code for:}------------------------"""
 
@@ -245,10 +301,10 @@ op1 should contain all the characters which are present in str1 but NOT present 
 op2 should contain all the characters which are present in str2 but NOT present in str1.
 
 For example:
- 	str1	str2	op1	op2
-Example 1	ABC	BC	A	<null>
-Example 2	BC	BANGALORE	C	ANGLORE
-"""
+                str1	str2	op1	op2
+    Example 1	ABC	    BC	    A	<null>
+    Example 2	BC	BANGALORE	C	ANGLORE
+    """
 
 """------------------------**************Answer**************************---------------"""
 # st1=input("enter the string")
@@ -309,6 +365,30 @@ U1,U5
 #     if i not in f3:
 #         f3.append(i)
 # print("The output is",f3)
+
+#method2:
+# f1=[["U1","U2"],["U3","U4"],["U1","U5"],["U2","U1"],["U3","U4"]]
+#
+# def sort_x(x):
+#
+#   for i in range(len(x)):
+#     for j in range(len(x)):
+#       if x[i]<x[j]:
+#         x[i],x[j]=x[j],x[i]
+#
+#   return x
+#
+# f2=[]
+#
+# for i in f1:
+#   f2.append(sort_x(i))
+#
+# f3=[]
+# for i in f2:
+#   if i not in f3:
+#     f3.append(i)
+#
+# print(f3)
 
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------

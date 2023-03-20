@@ -1,3 +1,5 @@
+
+
 import time
 
 from selenium import webdriver
@@ -71,7 +73,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 #
 # act.drag_and_drop()
 # act.drag_and_drop_by_offset()
-# driver.switch_to.new_window('window')
+# driver.swit
+#
+# ch_to.new_window('window')
 # driver.switch_to.new_window('tab')
 
 # driver.get("https://stackoverflow.com/")

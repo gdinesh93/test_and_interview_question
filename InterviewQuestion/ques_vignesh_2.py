@@ -17,6 +17,23 @@ the two largest integers in the list."""
 #
 # two_largest(ls1)
 #
+# method2:
+# def two_largest(ls):
+#   first_largest=ls[0]
+#   second_largest=ls[1]
+#
+#   for i in ls:
+#     if i>first_largest:
+#       second_largest=first_largest
+#       first_largest=i
+#     elif i>second_largest and i!=first_largest:
+#       second_largest=i
+#
+#   print("the 2 largest numbers are",first_largest,second_largest)
+#
+# ls1=[2,4,66,24,53,66,12]
+# two_largest(ls1)
+
 
 """2.Write a function that takes a list of strings as input and returns the shortest string that 
 contains all the characters in the list."""
@@ -39,6 +56,21 @@ contains all the characters in the list."""
 # st1="happening"
 # st2="happiness"
 # string_difference(st1,st2)
+
+# method2
+# def string_difference(str1, str2):
+#   ls1=[x for x in str1]
+#   ls2=[x for x in str2]
+#   diff_ls=[]
+#   for i in ls1:
+#     if i not in ls2:
+#       diff_ls.append(i)
+#   for i in ls2:
+#     if i not in ls1:
+#       diff_ls.append(i)
+#   print("the difference is ", list(set(diff_ls)))
+#
+# string_difference("happiness", "happening")
 
 """4.Write a function that takes a list of integers as input and returns a new list containing 
 only the even numbers from the input list, in the same order."""
@@ -68,7 +100,7 @@ replaced by its corresponding ASCII code."""
 
 """6.Write a function that takes a list of integers as input and returns a new list where each element 
 is the sum of the corresponding element in the input list and its two neighbors. For example, if the 
-input list is [1, 2, 3, 4], the output list would be [3, 6, 9]."""
+input list is [1, 2, 3, 4], the output list would be [3, 6, 9,7]."""
 
 # def sum_with_neighbours(ls):
 #     n=len(ls)
@@ -146,7 +178,20 @@ For example, if the input list is [1, 2, 3, 4], the output list would be [24, 12
 # lst=[1,2,3,4]
 # multi_neigh(lst)
 
+# method2
 
+ls1=[1, 2, 3, 4]
+# def multi_neigh(ls1):
+#   ls2=[]
+#   for i in range(len(ls1)):
+#     w=1
+#     for j in ls1:
+#       if j!=ls1[i]:
+#         w=w*j
+#     ls2.append(w)
+#
+#   print(ls2)
+# multi_neigh(ls1)
 
 """10.Write a function that takes a string as input and returns a new string where each character is replaced
  by the character that appears next to it in the alphabet. For example, if the input string is "hello", 
